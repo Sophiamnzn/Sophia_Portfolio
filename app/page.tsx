@@ -365,7 +365,7 @@ export default function Home() {
             {/* RESUME BUTTON */}
             <div className="flex justify-center lg:justify-start">
               <a
-                href="YOUR_GOOGLE_DRIVE_LINK"
+                href="https://drive.google.com/file/d/19M2WMMMlaMbHFufAKojhs62LOzBmg6Lc/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-6 px-6 py-3 rounded-full bg-[#ff1493] text-white font-bold hover:scale-105 hover:bg-[#ff4da6] transition-all duration-300"
