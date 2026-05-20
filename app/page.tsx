@@ -258,12 +258,12 @@ export default function Home() {
             className="relative z-10 mt-5 lg:mt-0"
           >
             <Image
-              src="/images/sophia.png"
+              src="/images/formal.png"
               alt="Sophia"
               width={500}
               height={500}
               priority
-              className="w-auto h-[360px] md:h-[500px] lg:h-[700px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
+              className=" h-[200px] md:h-[250px] lg:h-[500px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.35)]"
             />
           </motion.div>
 
@@ -322,11 +322,11 @@ export default function Home() {
           >
             <a href="/">
               <Image
-                src="/images/sophia.png"
+                src="/images/formal.png"
                 alt="Sophia"
                 width={700}
                 height={700}
-                className="w-auto h-[350px] md:h-[500px] lg:h-[720px] object-contain cursor-pointer hover:scale-105 transition duration-300"
+                className="w-auto h-[400px] md:h-[500px] lg:h-[500px] object-contain cursor-pointer hover:scale-105 transition duration-300"
               />
             </a>
           </motion.div>
@@ -497,10 +497,10 @@ export default function Home() {
         </div>
 
         {/* CERTIFICATES */}
-        <div id="certificates" className="mt-32 px-6 md:px-10">
-          <h1 className="text-center text-[#ff1493] text-[38px] md:text-[40px] font-extrabold italic mb-14">
-            Certificates
-          </h1>
+        <div id="certificates" className="scroll-mt-28 mt-15 px-20 md:px-1">
+        <h1 className="text-center text-[#ff1493] text-[38px] md:text-[45px] font-extrabold italic mb-20">
+          Certificates
+        </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {certificates.map((certificate, index) => (
@@ -520,9 +520,9 @@ export default function Home() {
                 <Image
                   src={certificate}
                   alt="Certificate"
-                  width={450}
-                  height={400}
-                  className="w-full h-[300px] object-cover hover:scale-110 transition duration-500"
+                  width={300}
+                  height={300}
+                  className="w-full h-[250px] object-cover hover:scale-110 transition duration-500"
                 />
               </motion.div>
             ))}
