@@ -443,8 +443,7 @@ export default function Home() {
               >
                 {/* LIVE BADGE */}
                 {project.link && (
-                  <div className="absolute top-5 right-5 bg-[#ff1493] text-white px-4 py-1 rounded-full text-[10px] md:text-[12px] font-bold shadow-lg animate-pulse">
-                    LIVE WEBSITE
+                  <div className="absolute top-5 right-5 bg-[#ff1493] text-white px-4 py-1  text-[10px] md:text-[12px] font-bold shadow-lg">
                   </div>
                 )}
 
