@@ -67,12 +67,9 @@ export default function Home() {
       {/* ================= NAVBAR ================= */}
       <nav className="fixed top-0 left-0 w-full z-[999] px-5 md:px-5 py-1 backdrop-blur-xl">
         <div className="flex items-center justify-between">
-          {/* LOGO */}
-          <h1 className="text-[#ff4da6] font-extrabold text-[15px] md:text-[15px] italic">
-            {/* Optional Logo Text */}
-          </h1>
 
-          {/* DESKTOP NAV */}
+
+          {}
           <div className="hidden lg:flex items-center gap-8">
             <ul
               className={`flex gap-10 font-extrabold text-[15px] tracking-wide ${
@@ -124,7 +121,7 @@ export default function Home() {
               </button>
             </ul>
 
-            {/* DARK MODE */}
+            {}
             <button
               onClick={() => setDarkMode(!darkMode)}
               className={`p-3 rounded-full transition-all duration-500 ${
@@ -135,7 +132,7 @@ export default function Home() {
             </button>
           </div>
 
-          {/* MOBILE MENU BUTTON */}
+          {}
           <div className="flex items-center gap-3 lg:hidden">
             <button
               onClick={() => setDarkMode(!darkMode)}
@@ -157,7 +154,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* MOBILE MENU */}
+        
         {menuOpen && (
           <div
             className={`lg:hidden mt-5 rounded-3xl p-6 flex flex-col gap-6 font-bold ${
@@ -213,7 +210,7 @@ export default function Home() {
 
       {/* ================= HOME SECTION ================= */}
       <section className="relative w-full min-h-screen overflow-hidden pt-16 md:pt-24 lg:pt-0">
-        {/* BACKGROUND ACCENTS */}
+     
         <div className="absolute inset-0 overflow-hidden">
           <div
             className={`absolute top-[-150px] left-[-150px] w-[500px] h-[500px] rounded-full blur-3xl transition-all duration-700 ${
@@ -227,9 +224,9 @@ export default function Home() {
           />
         </div>
 
-        {/* MAIN CONTENT */}
+
         <div className="relative flex flex-col lg:flex-row items-center justify-center lg:justify-between min-h-screen px-6 md:px-12 lg:px-24">
-          {/* LEFT TEXT */}
+
           <motion.div
             initial={{ opacity: 0, x: -150 }}
             animate={{ opacity: 1, x: 0 }}
@@ -250,7 +247,7 @@ export default function Home() {
             </h1>
           </motion.div>
 
-          {/* CENTER IMAGE */}
+
           <motion.div
             initial={{ opacity: 0, y: -300 }}
             animate={{ opacity: 1, y: 0 }}
@@ -267,7 +264,7 @@ export default function Home() {
             />
           </motion.div>
 
-          {/* RIGHT TEXT */}
+
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -297,7 +294,7 @@ export default function Home() {
 
       {/* ================= ABOUT SECTION ================= */}
       <section id="about" className="relative w-full  flex flex-col justify-center">
-        {/* BACKGROUND ACCENTS */}
+
         <div className="absolute inset-0 overflow-hidden">
           <div
             className={`absolute top-[-100px] left-[-100px] w-[500px] h-[500px] rounded-full blur-3xl transition-all duration-700 ${
@@ -311,9 +308,9 @@ export default function Home() {
           />
         </div>
 
-        {/* ABOUT CONTENT */}
+
         <div className="relative flex flex-col lg:flex-row items-center justify-between gap-14 px-6 md:px-12 lg:px-24 w-full">
-          {/* IMAGE */}
+
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -331,7 +328,7 @@ export default function Home() {
             </a>
           </motion.div>
 
-          {/* TEXT */}
+
           <motion.div
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -362,10 +359,10 @@ export default function Home() {
               interfaces.
             </p>
 
-            {/* RESUME BUTTON */}
+
             <div className="flex justify-center lg:justify-start">
               <a
-                href="https://drive.google.com/file/d/19M2WMMMlaMbHFufAKojhs62LOzBmg6Lc/view?usp=sharing"
+                href="https://drive.google.com/file/d/1y7q1GQfIwBlC4miAX7JHmJSh7pjjfx9k/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-6 px-6 py-3 rounded-full bg-[#ff1493] text-white font-bold hover:scale-105 hover:bg-[#ff4da6] transition-all duration-300"
@@ -376,7 +373,7 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* SKILLS CAROUSEL */}
+
         <div className="mt-4 lg:mt-0 w-full overflow-hidden">
           <motion.div
             animate={{ x: ["0%", "-50%"] }}
@@ -441,13 +438,8 @@ export default function Home() {
                     : "bg-white/20 border border-white/20"
                 }`}
               >
-                {/* LIVE BADGE */}
-                {project.link && (
-                  <div className="absolute top-5 right-5 bg-[#ff1493] text-white px-4 py-1  text-[10px] md:text-[12px] font-bold shadow-lg">
-                  </div>
-                )}
 
-                {/* IMAGE */}
+
                 <div className="overflow-hidden rounded-2xl">
                   {project.link ? (
                     <a
@@ -474,7 +466,7 @@ export default function Home() {
                   )}
                 </div>
 
-                {/* TITLE */}
+
                 <div className="flex items-center justify-center gap-2 mt-5">
                   <h1 className="text-center text-[#b1006e] font-extrabold italic text-[20px] md:text-[28px]">
                     {project.title}
@@ -485,7 +477,7 @@ export default function Home() {
                   )}
                 </div>
 
-                {/* LIVE WEBSITE TEXT */}
+
                 {project.link && (
                   <p className="text-center text-[#ff69b4] text-[11px] md:text-[13px] mt-2 font-semibold">
                     Click image to visit live website
@@ -535,10 +527,10 @@ export default function Home() {
         id="contacts"
         className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-10 py-24 overflow-hidden"
       >
-        {/* GLOW EFFECT */}
+        
         <div className="absolute top-32 left-40 w-[120px] h-[120px] rounded-full bg-[#ff4da6]/40 blur-3xl" />
 
-        {/* TITLE */}
+        
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -549,9 +541,9 @@ export default function Home() {
         >
           Contact Me
         </motion.h1>
-        {/* CONTACT GRID */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-20 mt-24 w-full max-w-7xl">
-          {/* EMAIL & LOCATION */}
+         
           <div>
             <h1 className="text-[#ff4da6] font-extrabold text-[30px] mb-6">
               Email
@@ -620,7 +612,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* GET IN TOUCH */}
+
           <div>
             <h1 className="text-[#ff4da6] font-extrabold text-[40px] mb-6">
               Get In Touch
